@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="contacts.css" type="text/css" rel="stylesheet"/>
+    <title>KCreads</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="myheader">
+        <img id="logo" src="logo.png" alt="logo">
+        <div class="navigator"> 
+            <p><a href = "KCReads.html" rel = "homepage"> Home </a></p>
+            <p><a href = "blog.html" rel = "blogpage"> Blog </a></p>
+            <p><a href = "calendar.html" rel = "calpage"> Calendar </a></p>
+            <p><a href = "about.html" rel = "aboutpage"> About </a></p>
+            <p><a href = "contacts.html" rel = "registerpage"> Contacts</a></p>
+            <p class="icons"><a href="https://www.instagram.com/kseniask/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ksenia.skaletska"><i class="fa fa-facebook"></i></a></p>
+         </div>
+    </header>
+
+    <div id="content"> 
+        <div id="simplemodal" class ="modal">
+            <div id="modalwindow">
+                <div id="modalheader">
+                <span class="closebtn" onclick="closemodal()">&times;</span>
+                <h2> Thank you for your email!</h2>
+                <hr>
+                </div>
+                <div id="modalcontent">
+                <p> First thing I do in the morning is checking the email, so be sure that I will get back to you soon!</p>
+                </div>
+                <div id="modalfooter">
+                       See ya!
+                    </div>
+            </div>
+        </div>
+        <div id="intro">
+            <h1>Let,s connect! </h1>
+            <p>Write me an email and I will answer as soon as possible</p>
+            <hr>
+        </div>
+        <form id="myform"> 
+        <div id="form">
+            
+            <label for="name" > Name: </label>
+                <input name = "name"type="text" class="name"required>
+            <label> Surname : </label>
+                <input type="text" class="surname">
+            
+            <label for="email"> Email: </label>
+            <input name="email" type ="email" class = "email" id="myemail" required>
+            
+            <label for="subject">Subject:</label>
+                <input required name="subject" type="text" class="subject" required>
+            
+            <label for ="message"> Message: </label>
+                <textarea minlength="20" class="message"  name="message" rows="10" cols="40" required></textarea>
+                
+            <label></label>    
+            <button type="submit" onclick="openmodal()"class="submit">Send</button>
+        </div>
+        </form>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="rowfooter">
+            <div class="columnfooter">
+                    <div id ="location"><i class="fa fa-map-marker"></i>
+                        <br>Vancouver, BC | Canada
+                    </div>
+            </div>
+            <div class="columnfooter">
+                    <div id ="email"><i style ="font-size:27px"class="fa fa-envelope-open-o"></i>
+                        <br>
+                        <a href="mailto:kseniask30@gmail.com">kseniask30@gmail.com</a>
+                    </div>
+            </div>
+            <div class="columnfooter">
+                    <div id ="phone"><i style ="font-size:30px"class="fa fa-phone"></i>
+                        <br>
+                        <a href="tel:1(236)-975-1440">+1(236) 975-1440</a>
+                    </div>
+            </div>
+          </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+<script src ="form.js"></script>
+</body>
+</html>

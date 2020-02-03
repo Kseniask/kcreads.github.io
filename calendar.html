@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="calendar.css" type="text/css" rel="stylesheet"/>
+    <title>KCreads</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="myheader">
+        <img id="logo" src="logo.png" alt="logo">
+        <div class="navigator"> 
+            <p><a href = "KCReads.html" rel = "homepage"> Home </a></p>
+            <p><a href = "blog.html" rel = "blogpage"> Blog </a></p>
+            <p><a href = "calendar.html" rel = "calpage"> Calendar </a></p>
+            <p><a href = "about.html" rel = "aboutpage"> About </a></p>
+            <p><a href = "contacts.html" rel = "registerpage"> Contacts</a></p>
+            <p class="icons"><a href="https://www.instagram.com/kseniask/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ksenia.skaletska"><i class="fa fa-facebook"></i></a></p>
+         </div>
+    </header>
+
+    <div id="content">
+            <div id="calheader">
+                    <h1> Event Calendar</h1>
+                    <hr>
+                    <br>
+                </div>
+                <h3 id="eventtitle">Add your January event:</h3>
+                <div id="addevent">
+                    
+                    <div class="eventquestions">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" width="100px">
+                </div>
+                <div class="eventquestions">
+                    <label for="link">Link</label>
+                    <input id="link" type="text" width="100px">
+                </div>
+                <div class="eventquestions dateq">
+                    <label for="date">Date</label>
+                    <select name="date" id="date" width="20px">
+                    </select><p id='ch'>month 2020</p>
+                </div>
+                <button id="addbutton" onclick="addevent()">Add Event</button>
+            </div>
+        <div id="calendar"style="width:70%;height:700px;">
+            
+            <h3 class="monthheader" id="monthYear">Month and Year</h3>
+        <table id="table">
+            <thead>
+            <tr id="days">
+                <td>Sunday</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+            </thead>
+            <tbody id="calbody">
+
+            </tbody>
+        </table>
+        <div class="forminline">
+            <button class="btn btn-back" onclick="previous()">Previous</button>
+            <button class="btn btn-back" onclick="next()">Next</button>
+        </div>
+    </div></div>
+    <div class="footer">
+        <div class="rowfooter">
+            <div class="columnfooter">
+                    <div id ="location"><i style ="font-size:35px"class="fa fa-map-marker"></i>
+                        <br>Vancouver, BC | Canada
+                    </div>
+            </div>
+            <div class="columnfooter">
+                    <div id ="email"><i style ="font-size:27px"class="fa fa-envelope-open-o"></i>
+                        <br>
+                        <a href="mailto:kseniask30@gmail.com">kseniask30@gmail.com</a>
+                    </div>
+            </div>
+            <div class="columnfooter">
+                    <div id ="phone"><i style ="font-size:30px"class="fa fa-phone"></i>
+                        <br>
+                        <a href="tel:1(236)-975-1440">+1(236) 975-1440</a>
+                    </div>
+            </div>
+          </div>
+    </div>
+    
+<script src="kcreads.js"></script>
+<script src="calendar2.js"></script>
+</body>
+</html>

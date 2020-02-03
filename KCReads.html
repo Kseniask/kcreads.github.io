@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="kcreads.css" type="text/css" rel="stylesheet"/>
+    <title>KCreads</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="myheader">
+        <img id="logo" src="logo.png" alt="logo">
+        <div class="navigator"> 
+            <p><a href = "KCReads.html" rel = "homepage"> Home </a></p>
+            <p><a href = "blog.html" rel = "blogpage"> Blog </a></p>
+            <p><a href = "calendar.html" rel = "calpage"> Calendar </a></p>
+            <p><a href = "about.html" rel = "aboutpage"> About </a></p>
+            <p><a href = "contacts.html" rel = "registerpage"> Contacts</a></p>
+            <p class="icons"><a href="https://www.instagram.com/kseniask/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ksenia.skaletska"><i class="fa fa-facebook"></i></a></p>
+        
+         </div>
+    </header>
+    <div id = "greeting">
+        <div id="whitesquare">
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <img src="kc.jpg" id="myphoto">
+            </div>
+            <div class="column" id="saying">
+                <p id="greet"><q>Every day every hour <br> turn your pain into power</q></p>
+                <div id="introlink"><a href="#aboutme" >Let me introduce myself</a></div>
+            </div>
+        </div>
+    </div>
+    <div id = "aboutme">
+        <div id = "aboutmecontent">
+        <p id="name">Kseniia Skaletska</p>
+        <h2 id = "texth1">Hello Friend,<br>It is nice to see you here. Here is a place where you can check out what this little(no,seriously,little,I am 159cm tall) ambitious girl does. Let me help you gain some appetite for this life. <i class="fa fa-battery"></i></h2>
+        <p id="description">I am obsessed with development and I love motivate people doing the same. Check out the blog page to see some productivity hacks, my way stories and other usefull tips that will defifnitely make you a better version of yourself.
+            Don't forget to check out my callendat page to see the events to get some inspiration and upgrade the skills you need.
+            <br>
+            See ya!
+        </p>
+        
+        <div id="mystudies">
+            <img src="do.jpg" alt="douglascollege" id="dopic">
+        </div>
+    <div id="longrec">
+        <div id="nowlearn">
+            <p>Now I am on my way to make my dream come true.<br>
+                I am a student of the Computer Science department at Douglas College. You see, I have made this site on my own. Looks nice, yeah?<br>
+            I was dreaming about it since the very school years and now I am in Canada getting closer to the dream of being a full stack developer.
+        <br>See some of my works on GitHub</p>
+        <a href="https://github.com/Kseniask" id="githubacc">Go to GitHub <i class="fa fa-code"></i> <i class="fa fa-external-link" style="font-size:11px"></i></a>
+        </div>
+    </div>
+</div>
+    </div>
+<div id="lastposts">
+    <div id="postsheader">Last posts</div>
+    <div id="row">
+        <div class="col" id="sq1" >
+           <div><a href="blog.html#blogheader"><img src="kneu.png" id="kneu"></a>
+                <p id="first"class="text">Spend your student <br>life productively
+           </div>
+        </div>
+        <div class="col">
+                <div><a href="blog.html#treatpost"><img src="treatyourself.png" id="treat"></a>
+                    <p class="text">Start loving yourself more</p>
+                </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="rowfooter">
+            <div class="columnfooter">
+                    <div id ="location"><i style ="font-size:35px"class="fa fa-map-marker"></i>
+                        <br>Vancouver, BC | Canada
+            </div>
+            </div>
+            <div class="columnfooter">
+                    <div id ="email"><i style ="font-size:27px"class="fa fa-envelope-open-o"></i>
+                        <br>
+                        <a href="mailto:kseniask30@gmail.com">kseniask30@gmail.com</a>
+                    </div>
+            </div>
+            <div class="columnfooter">
+                    <div id ="phone"><i style ="font-size:30px"class="fa fa-phone"></i>
+                        <br>
+                        <a href="tel:1(236)-975-1440">+1(236) 975-1440</a>
+                    </div>
+            </div>
+          </div>
+    </div>
+</div>
+<script src="kcreads.js"></script>
+</body>
+</html>

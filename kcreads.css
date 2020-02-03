@@ -1,0 +1,435 @@
+*{
+    box-sizing: border-box;
+    
+}
+.row{
+    display: flex;
+    width:70%;
+    position:absolute;
+    top:180px;
+    right: 14%;
+    left: 14%;
+    
+}
+.column{
+    flex:50%;
+    z-index: 3;
+    align-items: center;
+}
+
+#saying.column{
+    margin: auto;
+}
+header{
+    height: 4em;
+    margin:0;
+    background-color:rgba(234, 217, 193, 0.6);
+    
+}
+body{
+    max-width: 1080px;
+    margin: 0 auto;
+    float: none;
+    box-shadow:0px 10px 15px lightgray;
+    font-family: "Montserrat";
+}
+body::after{
+    content:"";
+    background-image: url("paper.jpg");
+    opacity: 0.2;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position:fixed;
+    z-index: -1;
+
+}
+#logo{
+    width:5em;
+    margin-left: 3%;
+    opacity: 0.7;
+}
+#greeting{
+    background-color:rgba(234, 217, 193, 0.6);
+    width:100%;
+    height:80vh;
+    z-index: 1;
+    
+}
+.navigator{ 
+    display:inline-flex;
+    float:right;
+    margin-right: 9%;
+    width:22em;
+}
+.navigator a{
+   
+    text-decoration: none;
+    color:#8C8273;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.06px;
+    font-size: 12px;
+}
+.navigator a:hover, #icons a:hover{
+    text-shadow: 0px 0px 2px rgb(54, 42, 28);
+    color:white; 
+}
+.navigator p{
+    flex: 1 1 60px;
+    text-align: center;
+}
+.icons{
+    display:inline-block;
+    width:30px;
+}
+.icons p {
+    color:#8C8273;
+    text-decoration: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 1080px;
+    background-color:rgb(245, 245, 245);
+    z-index:100;
+    box-shadow: 0px 0px 5px lightgrey;
+  }
+  #whitesquare{
+      display: flex;
+      
+      top:5%;
+      right: 400px;
+      left: 400px;
+      align-items: stretch;
+      width: 31.25em;
+      height: 31.25em;
+      flex-shrink:1;
+      margin: 0 auto;
+      background-color: whitesmoke;
+      z-index: 2;
+  }
+  #greet{
+    font-family: 'Caveat', cursive;
+    letter-spacing: 1px;
+    color: #625242;
+    font-size: 1em;
+    line-height: 23px;
+    background-color:#F6F2ED;
+    box-shadow: inset 0 0 10px lightgrey;
+    box-shadow: inset 0 0 10px lightgrey;
+    padding: 20px;
+    text-align: center;
+    width:60%;
+    position: center;
+    margin-left: 30px;
+  }
+
+  #introlink{
+      padding-left: 75px;
+      width:100%;
+      font-family: "Montserrat";
+      font-size: 11px;
+      
+  }
+  #introlink a{
+    text-decoration: none;
+    color:rgb(54, 42, 28);
+    opacity: 0.7;
+    
+  }
+
+  #myphoto{
+      position:relative;
+      left: -200px;
+      width: 280px;
+      align-items: bottom;
+      float:right;
+      margin-right:30px;
+      animation: slide 2s forwards;
+  }
+  @keyframes slide{
+      100%{left:0;}
+  }
+ 
+  
+  #aboutme{
+      width: 100%;
+      height: 220vh;
+      background-color: whitesmoke;;
+  }
+  #texth1{
+  opacity:0.3;
+  }
+  #name{
+      font-size: 12px; 
+      opacity:0.3;
+      
+  }
+  #aboutmecontent{
+      width:65%;
+      margin: 0 auto;
+      padding-top: 100px;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 35px;
+      text-align: justify;
+  }
+  #description{
+      line-height: 20px;
+      font-size: 14px;
+      font-family: "Montserrat";
+      opacity: 0.7;
+  }
+  img#dopic {
+      position:relative;
+      width: 60%;
+      float:right;
+      margin-top: 30%;
+      z-index:5;
+}
+#nowlearn{
+    padding:20% 53% 0px 30px;
+    font-size: 1vw;
+    color:rgb(54, 42, 28);
+    opacity: 0.6;
+}
+  div#longrec{
+      width:40%;
+      height:110%;
+      position:absolute;
+      margin-top: 10%;
+      background-color:rgba(234, 217, 193, 0.6);
+      line-height: 164%;
+  }
+  #githubacc{
+      float:right;
+      text-decoration: none;
+      color:rgb(54, 42, 28);
+  }
+  #githubacc:hover{
+    text-shadow: 0px 0px 2px rgb(54, 42, 28);
+    color:white; 
+  }
+#lastposts{
+    margin-top:0px;
+    width:100%;
+    height:80vh;
+    background-color:rgba(234, 217, 193, 0.6);
+}
+#postsheader{
+    padding-top:50px;
+    font-size: 30px; 
+    opacity:0.4;
+    text-shadow: 3px 2px rgb(109, 87, 59);
+    width:100%;
+    text-align: center;
+    color:rgb(54, 42, 28);
+}
+#row {
+    position: relative;
+    display: flex;
+    width:70%;
+    margin: 40px auto;
+    
+}
+.col{
+    flex:50%;
+    align-items: center;
+
+}
+
+#kneu, #treat{
+    width:90%;
+    display:block;
+    height:auto;
+    transition: .5s ease;
+    backface-visibility: hidden; 
+    position: relative;
+    border: 4px dotted whitesmoke;
+    padding:4%;
+    margin-right:5%;
+    
+}
+.text{
+    color:white;
+    font-size: 1em;
+    position:absolute;
+    top:0%;
+    margin-top:20%;
+    text-align: center;
+    height:auto;
+    opacity:0;
+    transition:.3s;
+    z-index:0;
+    margin-left:7%;
+    background: transparent;
+    text-shadow:
+   -1px -1px 0 rgba(54, 42, 28, 0.3),  
+    1px -1px 0 rgba(54, 42, 28, 0.3),
+    -1px 1px 0 rgba(54, 42, 28, 0.3),
+     1px 1px 0 rgba(54, 42, 28,0.3);
+}
+ #first{
+    margin-left:11%;
+}
+
+.col:hover :not(img){
+    opacity: 1;
+}
+#kneu:hover,#treat:hover{
+    opacity: 0.5;
+    z-index:0;
+}
+
+.footer{
+    position: relative;
+    width:100%;
+      bottom: 0;
+      height:auto;
+      background-color: rgb(234, 217, 193);
+    }
+.rowfooter{
+        display: flex;
+        width:70%;
+    margin: 0 12%;
+    }
+.columnfooter{
+        flex:30%;
+        height:100px;
+        padding:20px;
+        line-height:30px;
+    }
+#email, #location, #phone{
+        text-align: center;
+        color:rgb(54, 42, 28);
+        opacity: 0.5;
+    }
+#email a,#location, #phone a{
+        text-decoration: none;
+        color:rgb(54, 42, 28);
+        font-size: 12px;
+    }
+#location {
+        margin-top:-5px;
+        line-height: 28px;;
+    }
+#email a:hover, #phone a:hover{
+        text-shadow: 0px 0px 2px rgb(54, 42, 28);
+        color:white; 
+      }
+    @media (max-width:640px){
+.rowfooter{
+    width:100%;
+    margin:0;
+}
+.text{
+    display: none;
+}
+div#longrec{
+        height:auto;
+        }
+#nowlearn{
+    line-height: 3vw;
+    font-size: 2vw;
+    padding: 6% 35% 0 10%;
+}
+    }
+
+@media(max-width:1200px){
+        #nowlearn{
+            padding-right: 45%;
+        }
+    }
+@media(max-width:900px){
+        div#longrec{
+            height:80%;
+        }
+        div#lastposts{
+            height: 510px;
+        }
+        *{box-sizing:content-box;}
+        div#introlink{
+            padding-left:0px;
+        }
+    }
+@media(max-width: 480px){
+    .rowfooter{
+        display: block;
+        width:100%;
+    }
+    .columnfooter{
+        width:100%;
+        height:auto;
+    }
+
+    div#lastposts{
+        height: 320px;
+    }
+    div#longrec{
+        height:390px;
+    }
+    .navigator {
+        width: 60%;
+        margin-right: 50px;
+    }
+    .navigator a{
+        font-size: 9px;
+        padding:3%;
+    }
+    #logo{
+        width:15%;
+        margin-top: 2%;
+    }
+    #email i, #location i, #phone i{
+        font-size:7px;
+    }
+
+}
+@media(max-width:600px){
+    .row{
+        display:block;
+        width:100%;
+        clear:both;
+        top: 20%;
+    right: 0;
+    left: 0;
+    }
+    #saying{
+        width:70%;
+        height:100px;
+        margin: 0 auto;
+    }
+    #saying.column{
+        width:70%;
+    }
+    #myphoto{
+        display:flex;
+        width: 280px;
+        align-items: center;
+        float: none;
+        margin:0 auto;
+    }
+    p#greet{
+margin:5% auto;
+    }
+    .column{
+        width:100%;
+        clear:both;
+    }
+    #introlink{
+        text-align: center;
+    }
+    #aboutme{
+        height: 200vh;
+    }
+    #texth1{
+        font-size: 20px;
+    }
+
+}
+#h2text{
+    word-spacing: 0.5px;
+    font-size: 20px;
+    line-height: 0.6px;
+}
+    
